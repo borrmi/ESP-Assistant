@@ -16,15 +16,13 @@
 # GPIO 7 Dout of the amplifier 
 # GPIO 8 Din of the (8) LEDs
 
-# Thanks to AI support, I have adapted the rest to the current version of ESPHome.
-
 substitutions:
   name: "voiceskull"
-  friendly_name: voiceskull
+  friendly_name: skull
 
   
   micro_wake_word_model: hey_jarvis               # Other options are: hey_jarvis or alexa
-  timer_alarm_sound: "sounds/timer_finished.mp3"  # in the esphome/sounds folder
+  timer_alarm_sound: "sounds/timer_finished.wav"  # in the esphome/sounds folder
   voice_assist_idle_phase_id: "1"
   voice_assist_listening_phase_id: "2"
   voice_assist_thinking_phase_id: "3"
@@ -92,7 +90,7 @@ external_components:
 # Enable Home Assistant API
 api:
   encryption:
-    key: "your_personal_secret_key"
+    key: "gl9CSGRnoz6TGy/vA3jSHDKdr1lobeS64Npe1doSCJI="
   on_client_connected:
     then:
       - delay: 50ms
@@ -122,7 +120,7 @@ wifi:
   # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
     ssid: "Skull_Fallback"
-    password: "your_secret_password"
+    password: "r28061968b"
 
 button: # Diagnotiscs
   - platform: restart
@@ -246,7 +244,7 @@ voice_assistant:
         condition:
             - switch.is_on: wake_up_bell
         then:  
-          - lambda: id(box_speaker).play(id(timer_finished_mp3_file), sizeof(id(timer_finished_mp3_file)));
+          - lambda: id(box_speaker).play(id(timer_finished_wave_file), sizeof(id(timer_finished_wave_file)));
           - switch.turn_off: wake_up_bell
     - script.execute: control_led
   on_stt_vad_end:
@@ -359,7 +357,7 @@ voice_assistant:
         condition:
           switch.is_on: timer_ringing
         then:
-          - lambda: id(box_speaker).play(id(timer_finished_mp3_file), sizeof(id(timer_finished_mp3_file)));
+          - lambda: id(box_speaker).play(id(timer_finished_wave_file), sizeof(id(timer_finished_wave_file)));
           - delay: 1s
     - wait_until:
         not:
@@ -931,5 +929,5 @@ sensor: # Diagnositcs
 
 
 file:
-  - id: timer_finished_mp3_file
+  - id: timer_finished_wave_file
     file: ${timer_alarm_sound}
