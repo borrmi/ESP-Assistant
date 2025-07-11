@@ -45,6 +45,17 @@ This the latest version. It is nearly the same as version 2 but this one makes i
 I've include the schematic that I used and placed it in the media folder. It follows to general approach for this setup but i had to use 2 diffentent pins to get it working reliably.
 Schematic is based on the one found [here](https://smarthomecircle.com/How-to-setup-on-device-wake-word-for-voice-assistant-home-assistant#circuit-diagram-for-esp32-s3-with-inmp441-microphone--max98357a-audio-amplifier)
 
+**UPDATE Version 4**
+
+Pinout: Microphone and amplifier use a common I2S 
+GPIO 3 lrclk 
+GPIO 4 bclrk 
+GPIO 5 Din of the micro 
+GPIO 7 Dout of the amplifier 
+GPIO 8 Din of the (8) LEDs
+
+Thanks to AI support, I have adapted the rest to the current version of ESPHome.
+
 **Requirements**
 - Home Assistant
 - ESPHome installed
