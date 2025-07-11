@@ -1,3 +1,23 @@
+I have made some changes. First of all, thanks for the great preparatory work!
+I have adapted this because of my personal needs.
+Hardware:
+ESP32-S3 mini
+
+Pinout:
+Microphone and amplifier use a common I2S 
+GPIO 3 lrclk
+GPIO 4 bclrk
+GPIO 5 Din of the micro
+GPIO 7 Dout of the amplifier
+GPIO 8 Din of the (8) LEDs
+
+Thanks to AI support, I have adapted the rest to the current version of ESPHome.
+
+I used a small Halloween skull as the housing, hence the name of the voice assistant.  
+
+Code under V4
+
+
 # ESP-Assistant
 An ESP32 S3 voice assistant for Home Assistant. Light weight and should compile on low end systems.
 
