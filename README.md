@@ -48,11 +48,11 @@ Schematic is based on the one found [here](https://smarthomecircle.com/How-to-se
 **UPDATE Version 4**
 
 Pinout: Microphone and amplifier use a common I2S 
-GPIO 3 lrclk 
-GPIO 4 bclrk 
-GPIO 5 Din of the micro 
-GPIO 7 Dout of the amplifier 
-GPIO 8 Din of the (8) LEDs
+- GPIO 3 lrclk 
+- GPIO 4 bclrk 
+- GPIO 5 Din of the micro 
+- GPIO 7 Dout of the amplifier 
+- GPIO 8 Din of the (8) LEDs
 
 Thanks to AI support, I have adapted the rest to the current version of ESPHome.
 
