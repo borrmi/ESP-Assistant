@@ -16,7 +16,7 @@
 # GPIO 7 Dout of the amplifier 
 # GPIO 8 Din of the (8) LEDs
 
-Thanks to AI support, I have adapted the rest to the current version of ESPHome.
+# Thanks to AI support, I have adapted the rest to the current version of ESPHome.
 
 substitutions:
   name: "voiceskull"
