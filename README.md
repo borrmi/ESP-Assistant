@@ -35,7 +35,7 @@ The ESP32-S3-BOX version that I also have showed to be far more stable. Because 
 This the latest version. It is nearly the same as version 2 but this one makes it possible to have a continues conversation.
 
 **Hardware needed**
-- CPU: ESP32-S3 N16R8
+- CPU: ESP32-S3 mini
 - Mic: INMP441
 - Amp: MAX98357A
 - Led: 3 WS2812B leds.
