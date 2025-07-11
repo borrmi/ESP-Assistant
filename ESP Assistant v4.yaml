@@ -11,11 +11,12 @@
 
 
 substitutions:
-  name: "esp-assistant-vp"
-  friendly_name: ESP Assistant VP
+  name: "voiceskull"
+  friendly_name: voiceskull
+
   
-  micro_wake_word_model: okay_nabu                # Other options are: hey_jarvis or alexa
-  timer_alarm_sound: "sounds/timer_finished.wav"  # in the esphome/sounds folder
+  micro_wake_word_model: hey_jarvis               # Other options are: hey_jarvis or alexa
+  timer_alarm_sound: "sounds/timer_finished.mp3"  # in the esphome/sounds folder
   voice_assist_idle_phase_id: "1"
   voice_assist_listening_phase_id: "2"
   voice_assist_thinking_phase_id: "3"
@@ -26,7 +27,7 @@ substitutions:
   voice_assist_timer_finished_phase_id: "20"
 
   # These unique characters have been extracted from every test file of every language available on https://github.com/home-assistant/intents (14 March 2024)
-  allowed_characters: " !#%'()+,-./0123456789:;<>?@ABCDEFGHIJKLMNOPQRSTUVWYZ[]_abcdefghijklmnopqrstuvwxyz{|}°²³µ¿ÁÂÄÅÉÖÚßàáâãäåæçèéêëìíîðñòóôõöøùúûüýþāăąćčďĐđēėęěğĮįıļľŁłńňőřśšťũūůűųźŻżŽžơưșțΆΈΌΐΑΒΓΔΕΖΗΘΚΜΝΠΡΣΤΥΦάέήίαβγδεζηθικλμνξοπρςστυφχψωϊόύώАБВГДЕЖЗИКЛМНОПРСТУХЦЧШЪЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюяёђєіїјљњћאבגדהוזחטיכלםמןנסעפץצקרשת،ءآأإئابةتجحخدذرزسشصضطظعغفقكلمنهوىيٹپچڈکگںھہیےংকচতধনফবযরলশষস়ািু্చయలిెొ్ംഅആഇഈഉഎഓകഗങചജഞടഡണതദധനപഫബഭമയരറലളവശസഹാിീുൂെേൈ്ൺൻർൽൾაბგდევზთილმნოპრსტუფქყშჩცძჭხạảấầẩậắặẹẽếềểệỉịọỏốồổỗộớờởợụủứừửữựỳ—、一上不个中为主乾了些亮人任低佔何作供依侧係個側偵充光入全关冇冷几切到制前動區卧厅厨及口另右吊后吗启吸呀咗哪唔問啟嗎嘅嘛器圍在场執場外多大始安定客室家密寵对將小少左已帘常幫幾库度庫廊廚廳开式後恆感態成我戲戶户房所扇手打执把拔换掉控插摄整斯新明是景暗更最會有未本模機檯櫃欄次正氏水沒没洗活派温測源溫漏潮激濕灯為無煙照熱燈燥物狀玄现現瓦用發的盞目着睡私空窗立笛管節簾籬紅線红罐置聚聲脚腦腳臥色节著行衣解設調請謝警设调走路車车运連遊運過道邊部都量鎖锁門閂閉開關门闭除隱離電震霧面音頂題顏颜風风食餅餵가간감갔강개거게겨결경고공과관그금급기길깥꺼껐꼽나난내네놀누는능니다닫담대더데도동됐되된됨둡드든등디때떤뜨라래러렇렌려로료른를리림링마많명몇모무문물뭐바밝방배변보부불블빨뽑사산상색서설성세센션소쇼수스습시신실싱아안않알았애야어얼업없었에여연열옆오온완외왼요운움워원위으은을음의이인일임입있작잠장재전절정제져조족종주줄중줘지직진짐쪽차창천최추출충치침커컴켜켰쿠크키탁탄태탬터텔통트튼티파팬퍼폰표퓨플핑한함해했행혀현화활후휴힘，？"
+  allowed_characters: " !#%'()+,-./0123456789:;<>?@ABCDEFGHIJKLMNOPQRSTUVWYZ[]_abcdefghijklmnopqrstuvwxyz{|}°²³µ¿ÁÂÄÅÉÖÚßàáâãäåæçèéêëìíîðñòóôõöøùúûüýþāăąćčďĐđēėęěğĮįıļľŁłńňőřśšťũūůűųźŻżŽžơưșțΆΈΌΐΑΒΓΔΕΖΗΘΚΜΝΠΡΣΤΥΦάέήίαβγδεζηθικλμνξοπρςστυφχψωϊόύώАБВГДЕЖЗИКЛМНОПРСТУХЦЧШЪЭЮЯабвгдежзийклмнопрстуфхцчшщъыьэюяёђєіїјљњћאבגדהוזחטיכלםמןנסעפץצקרשת،ءآأإئابةتجحخدذرزسشصضطظعغفقكلمنهوىيٹپچڈکگںھہیےংকচতধনফবযরলשষস়ািু্చయలిెొ్ംഅആഇഈഉഎഓകഗങചജഞടഡണതദധനപഫബഭമയരറലളവശസഹാിീുൂെേൈ്ൺൻർൽൾაბგდევზთილმნოპრსტუფქყშჩცძჭხạảấầẩậắặẹẽếềểệỉịọỏốồổỗộớờởợụủứừửữựỳ—、一上不个中为主乾了些亮人任低佔何作供依侧係個側偵充光入全关冇冷几切到制前動區卧厅厨及口另右吊后吗启吸呀咗哪唔問啟嗎嘅嘛器圍在场執場外多大始安定客室家密寵对將小少左已帘常幫幾库度庫廊廚廳开式後恆感態成我戲戶户房所扇手打执把拔换掉控插摄整斯新明是景暗更最會有未本模機檯櫃欄次正氏水沒没洗活派温測源溫漏潮激濕灯為無煙照熱燈燥物狀玄现現瓦用發的盞目着睡私空窗立笛管節簾籬紅線红罐置聚聲脚腦腳臥色节著行衣解設調請謝警设调走路車车运連遊運過道邊部都量鎖锁門閂閉開關门闭除隱離電震霧面音頂題顏颜風风食餅餵가간감갔강개거게겨결경고공과관그금급기길깥꺼껐꼽나난내네놀누는능니다닫담대더데도동됐되된됨둡드든등디때떤뜨라래러렇렌려로료른를리림링마많명몇모무문물뭐바밝방배변보부불블빨뽑사산상색서설성세센션소쇼수스습시신실싱아안않알았애야어얼업없었에여연열옆오온완외왼요운움워원위으은을음의이인일임입있작잠장재전절정제져조족종주줄중줘지직진짐쪽차창천최추출충치침커컴켜켰쿠크키탁탄태탬터텔통트튼티파팬퍼폰표퓨핑한함해했행혀현화활후휴힘，？"
 
 
 esphome:
@@ -80,25 +81,29 @@ external_components:
     components: [file]
     refresh: 0s
 
+# Enable Home Assistant API
 api:
   encryption:
-    key: !secret api_key # "0RpjwjYTywc+fIkRoV78gPaRJ6E/wDzCAJ3X8a/HZJE="
+    key: "your_personal_secret_key"
   on_client_connected:
-    - script.execute: control_led
+    then:
+      - delay: 50ms
+      - micro_wake_word.start
   on_client_disconnected:
-    - script.execute: control_led
+    then:
+      - voice_assistant.stop
 
+# Allow Over-The-Air updates
 ota:
-  - platform: esphome
-    id: ota_esphome
+ - platform: esphome
 
 logger:
 #  hardware_uart: USB_SERIAL_JTAG
 
+# WLAN-Konfiguration
 wifi:
   ssid: !secret wifi_ssid
   password: !secret wifi_password
-  output_power: 8.5dB
 
   # If the device connects, or disconnects, to the Wifi: Run the script to refresh the LED status
   on_connect:
@@ -108,9 +113,8 @@ wifi:
 
   # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
-    ssid: !secret fallback_ssid
-    password: !secret fallback_password
- 
+    ssid: "Skull_Fallback"
+    password: "your_secret_password"
 
 button: # Diagnotiscs
   - platform: restart
@@ -122,9 +126,8 @@ button: # Diagnotiscs
 light:
   - platform: esp32_rmt_led_strip
     rgb_order: GRB
-    pin: GPIO17 #GPIO48 # On board light
-    num_leds: 3
-    rmt_channel: 0
+    pin: GPIO8
+    num_leds: 8
     chipset: WS2812
     name: "Status LED"
     id: led_strip
@@ -153,7 +156,7 @@ light:
           name: "Waiting for wake word"
           min_brightness:  15%
           max_brightness: 35%
-          transition_length: 3s      # defaults to 1s
+          transition_length: 3s
           update_interval: 3s
 
 
@@ -174,58 +177,49 @@ micro_wake_word:
         then:
           - logger.log: "MICRO WAKE WORD - CONTINUOUS"
           - lambda: id(va).set_use_wake_word(false);
-          - voice_assistant.start_continuous:       # wake_word: !lambda return wake_word; not yet supported for continuous   
+          - voice_assistant.start_continuous:
         else:
           - logger.log: "MICRO WAKE WORD - START"
           - lambda: id(va).set_use_wake_word(false);
           - voice_assistant.start:
              wake_word: !lambda return wake_word;
 
-
-# This is our two i2s buses with the correct pins. 
-# You can refer to the wiring diagram of our voice assistant for more details 
+# This is our single, shared i2s bus for full-duplex audio.
 i2s_audio:
-  - id: i2s_in
-    i2s_lrclk_pin: GPIO18  #WS 
-    i2s_bclk_pin: GPIO2    #SCK
-  - id: i2s_out
-    i2s_lrclk_pin: GPIO6   #LRC 
-    i2s_bclk_pin: GPIO7    #BLCK
+  id: i2s_bus
+  i2s_lrclk_pin: GPIO3
+  i2s_bclk_pin: GPIO4
 
-# This is the declaration of our microphone. 
-# It includes the data pin (You can refer to the wiring diagram of our voice assistant for more details)
-# It references the correct i2s bus declared above.
+# Microphone configuration
 microphone:
   - platform: i2s_audio
     id: box_mic
     adc_type: external
-    i2s_audio_id: i2s_in
-    i2s_din_pin: GPIO4
+    i2s_audio_id: i2s_bus
+    i2s_din_pin: GPIO5
     pdm: false
     channel: left
-    bits_per_sample: 32 bit
+    bits_per_sample: 32bit
 
-# This is the declaration of our speaker. 
-# It includes the data pin (You can refer to the wiring diagram of our voice assistant for more details)
-# It references the correct i2s bus declared above.
+# Speaker configuration
 speaker:
-  platform: i2s_audio
-  id: box_speaker
-  dac_type: external
-  i2s_audio_id: i2s_out
-  i2s_dout_pin: GPIO8
-  channel: mono
-  
+  - platform: i2s_audio
+    id: box_speaker
+    dac_type: external
+    i2s_audio_id: i2s_bus
+    i2s_dout_pin: GPIO7
+    bits_per_sample: 16bit
+    sample_rate: 16000
+    channel: mono
   
 voice_assistant:
   id: va
   microphone: box_mic
   speaker: box_speaker
-  noise_suppression_level: 4  # Between 0 and 4 inclusive. Defaults to 0 (disabled).
-  auto_gain: 4dBFS           # Between 0dBFS and 31dBFS inclusive. Defaults to 0 (disabled).
-  volume_multiplier: 1.0      # Must be larger than 0. Defaults to 1 (disabled).
-  vad_threshold: 3
-  on_listening:        # perform when the voice assistant microphone starts listening.
+  noise_suppression_level: 4
+  auto_gain: 4dBFS
+  volume_multiplier: 1.0
+  on_listening:
     - lambda: id(voice_assistant_phase) = ${voice_assist_listening_phase_id};
     - logger.log: "ON-LISTENING"
     - text_sensor.template.publish:
@@ -244,10 +238,10 @@ voice_assistant:
         condition:
             - switch.is_on: wake_up_bell
         then:  
-          - lambda: id(box_speaker).play(id(timer_finished_wave_file), sizeof(id(timer_finished_wave_file)));
+          - lambda: id(box_speaker).play(id(timer_finished_mp3_file), sizeof(id(timer_finished_mp3_file)));
           - switch.turn_off: wake_up_bell
     - script.execute: control_led
-  on_stt_vad_end:      # perform when voice activity detection ends speech-to-text processing.
+  on_stt_vad_end:
     - lambda: id(voice_assistant_phase) = ${voice_assist_thinking_phase_id};
     - logger.log: "ON STT VAD END"
     - if:
@@ -256,22 +250,22 @@ voice_assistant:
         then:
           - script.execute: stt_timeout_to_idle
     - script.execute: control_led
-  on_stt_end:          # perform when the voice assistant has finished speech-to-text. The resulting text is available to automations as the variable x.
+  on_stt_end:
     - logger.log: "ON STT END"
     - text_sensor.template.publish:
         id: text_request
         state: !lambda return x;
     - script.execute: control_led
-  on_tts_start:        # perform when the voice assistant has started text-to-speech. The text to be spoken is available to automations as the variable x.
+  on_tts_start:
     - logger.log: "ON TTS START"
     - text_sensor.template.publish:
         id: text_response
         state: !lambda return x;
-  on_tts_stream_start: # perform when audio stream (voice response) playback starts. Requires speaker to be configured.
+  on_tts_stream_start:
     - lambda: id(voice_assistant_phase) = ${voice_assist_replying_phase_id};
     - logger.log: "ON TTS STREAM START"
     - script.execute: control_led
-  on_tts_stream_end:   # perform when audio stream (voice response) playback ends. Requires speaker to be configured.
+  on_tts_stream_end:
     - logger.log: "ON_TTS STREAM END"
     - if:
         condition:
@@ -283,9 +277,8 @@ voice_assistant:
         else:
           - logger.log: "ON_TTS STREAM END 2"
           - lambda: id(voice_assistant_phase) = ${voice_assist_idle_phase_id};
-
     - script.execute: control_led
-  on_end:              # perform when the voice assistant is finished all tasks.
+  on_end:
     - logger.log: "ON_END"
     - if:
         condition:
@@ -294,8 +287,7 @@ voice_assistant:
             - lambda: return id(wake_word_engine_location).state == "On device";
         then:
           - script.execute: stt_timeout_to_idle
-
-  on_error:            #  perform when the voice assistant has encountered an error. The error code and message are available to automations as the variables code and message.
+  on_error:
     - logger.log: "ON_ERROR"
     - if:
         condition:
@@ -311,7 +303,6 @@ voice_assistant:
               condition:
                 switch.is_off: mute
               then:
-                # - logger.log: "(on_client_connected) Returning to idle by script"
                 - script.execute: return_to_idle
               else:
                 - lambda: id(voice_assistant_phase) = ${voice_assist_muted_phase_id};                
@@ -360,7 +351,7 @@ voice_assistant:
         condition:
           switch.is_on: timer_ringing
         then:
-          - lambda: id(box_speaker).play(id(timer_finished_wave_file), sizeof(id(timer_finished_wave_file)));
+          - lambda: id(box_speaker).play(id(timer_finished_mp3_file), sizeof(id(timer_finished_mp3_file)));
           - delay: 1s
     - wait_until:
         not:
@@ -420,7 +411,7 @@ script:
             - script.execute: control_led_init_state
 
   - id: stt_timeout_to_idle
-    mode: restart     # restart the timer if called before timeout
+    mode: restart
     then:
       if:
         condition:
@@ -438,10 +429,8 @@ script:
                 - wait_until:
                     condition:
                       lambda: return !(id(voice_assistant_phase) == ${voice_assist_replying_phase_id});
-                      # normally this would complete and move to next phase with on_tts_stream_end,
-                      # but sometimes this is missed so put a time limit on the wait
                     timeout: 6s
-                - delay: 600ms  # Give time for the stream to end and the phase to be switched back to listening and this timeout to be reset
+                - delay: 600ms
                 - logger.log: "STT_TIMEOUT_TO_IDLE - CONDITION FINISHED"
           - script.execute: return_to_idle
           
@@ -934,5 +923,5 @@ sensor: # Diagnositcs
 
 
 file:
-  - id: timer_finished_wave_file
+  - id: timer_finished_mp3_file
     file: ${timer_alarm_sound}
