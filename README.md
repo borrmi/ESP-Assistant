@@ -17,6 +17,7 @@ I used a small Halloween skull as the housing, hence the name of the voice assis
 
 Code under V4
 
+Hier is the project I started from: 
 
 # ESP-Assistant
 An ESP32 S3 voice assistant for Home Assistant. Light weight and should compile on low end systems.
