@@ -90,7 +90,7 @@ external_components:
 # Enable Home Assistant API
 api:
   encryption:
-    key: "gl9CSGRnoz6TGy/vA3jSHDKdr1lobeS64Npe1doSCJI="
+    key: "your secret key"
   on_client_connected:
     then:
       - delay: 50ms
@@ -120,7 +120,7 @@ wifi:
   # Enable fallback hotspot (captive portal) in case wifi connection fails
   ap:
     ssid: "Skull_Fallback"
-    password: "r28061968b"
+    password: "password"
 
 button: # Diagnotiscs
   - platform: restart
